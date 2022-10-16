@@ -31,7 +31,19 @@ const MainBoard = () => {
     setIsRunning(true);
   };
 
+  const updateRenderedTests = (
+    prevRenderedTests: RenderedTestInterface[],
+    newResult: RenderedTestInterface,
+  ) => {
+    const changedTestIndex = prevRenderedTests.findIndex((test) => test.id === newResult.id);
+    prevRenderedTests.splice(changedTestIndex, 1, newResult);
+
+    return prevRenderedTests;
+  };
+
   const onTestResultUpdate = useCallback((newResult: RenderedTestInterface) => {
+    setRenderedTests((prevRenderedTests) => updateRenderedTests(prevRenderedTests, newResult));
+
     if (newResult.status === TestStatus.Passed) {
       setPassedTestsAmount((prevTestsAmount) => prevTestsAmount + 1);
     } else if (newResult.status === TestStatus.Failed) {
