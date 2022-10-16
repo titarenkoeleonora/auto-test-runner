@@ -29,6 +29,7 @@ export const TestWrapper = styled.li(
     padding: 15px 10px;
     display: grid;
     grid-template-columns: 1fr auto auto;
+    gap: 10px;
     align-items: center;
     background-color: ${theme.colors.backgroundPrimary};
     border-radius: 5px;

@@ -1,18 +1,24 @@
+import { css } from 'styled-components';
+
 import { styled } from '../../../styles';
 import { ButtonWrapper } from '../../UI/Button/Button.styles';
 
-export const HeaderWrapper = styled.div`
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 5px;
+export const HeaderWrapper = styled.div(
+  ({ theme }) => css`
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
 
-  ${ButtonWrapper} {
-    margin-left: auto;
-  }
-`;
+    ${ButtonWrapper} {
+      @media (min-width: ${theme.breakpoints.tablet}) {
+        margin-left: auto;
+      }
+    }
+  `,
+);
 
 export const InfoWrapper = styled.div`
   display: flex;
