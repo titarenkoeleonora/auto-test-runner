@@ -1,9 +1,8 @@
 # Welcome to Auto test runner 👋
-![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000)
 
 > An automated test runner that executes tests in the browser and reports on their results as soon as each test has completed.
 
-### 🏠 [Homepage](-)
+### 🏠 [Homepage](https://github.com/titarenkoeleonora/auto-test-runner)
 
 ### ✨ [Demo](-)
 
@@ -19,9 +18,13 @@ As a bonus :
 - [x] App testing with Jest and react-testing-library allows testing the app from a user side and accessibility
 - [x] Style-components to separate business logic from rendering logic
 - [x] App deployed to Vercel
-- [x] ESlint and prettier for automatic code formatting and matching it to best practices and code style
+- [x] ESlint and prettier for automatic code formatting and matching it to best practices and code style. Folder .vscode contains the necessary settings for IDE
 - [x] Responsive layout
-- [x] Some comments during the code with potential improvements (can find by word "IMPROVEMENT") 
+
+Potential improvements :
+
+- [x] The array of received tests is adapted and extended using the adapter pattern. The information about passing the tests is recorded. As a result, the array is ready for adding sorting, filtering and other functions
+- [x] Using react-context/redux/other libraries to avoid props drilling and rerendering the application
 
 ## Install
 
@@ -47,11 +50,3 @@ npm run test
 
 * Github: [@titarenkoeleonora](https://github.com/titarenkoeleonora)
 * LinkedIn: [@eleonora-titarenko](https://linkedin.com/in/eleonora-titarenko)
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
