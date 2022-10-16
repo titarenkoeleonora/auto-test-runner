@@ -4,7 +4,7 @@
 
 ### 🏠 [Homepage](https://github.com/titarenkoeleonora/auto-test-runner)
 
-### ✨ [Demo](-)
+### ✨ [Demo](https://auto-test-runner.vercel.app/)
 
 ## What's done
 
